@@ -66,3 +66,15 @@
     });
     
   })(window.jQuery);
+
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('toggle', function() {
+        if (this.open) {
+            document.querySelectorAll('.faq-item').forEach(otherItem => {
+                if (otherItem !== this && otherItem.open) {
+                    otherItem.open = false;
+                }
+            });
+        }
+    });
+});
