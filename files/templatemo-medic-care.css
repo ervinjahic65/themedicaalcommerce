@@ -922,6 +922,10 @@ details[open] .arrow-icon {
   flex-wrap: wrap;
 }
 
+.logo-img {
+  width: 220px !important;
+  height: auto;
+}
 
 @media screen and (max-width: 767px) {
   .heroText {
