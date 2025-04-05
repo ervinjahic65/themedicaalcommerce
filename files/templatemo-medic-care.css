@@ -843,6 +843,18 @@ strong {
   }
 }
 
+.form-container {
+  background-color: #247cff !important;
+}
+
+input::placeholder {
+  color: #FFF !important;
+}
+
+.cs-btn {
+  margin: 2% 0;
+}
+
 @media screen and (max-width: 767px) {
   .heroText {
     padding: 1.5rem;
