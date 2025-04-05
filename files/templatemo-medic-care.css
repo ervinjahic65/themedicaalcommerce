@@ -922,9 +922,6 @@ details[open] .arrow-icon {
   flex-wrap: wrap;
 }
 
-.col-lg-4, .col-md-6 {
-  display: flex;
-}
 
 @media screen and (max-width: 767px) {
   .heroText {
