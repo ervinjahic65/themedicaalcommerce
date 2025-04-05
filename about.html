@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - The Medical Commerce</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+    <style>
+      html,
+      body {
+          height: 100%;
+      }
+      body {
+          display: flex;
+          flex-direction: column;
+      }
+      main {
+          flex: 1;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-[#247cff] text-white sticky top-0 z-50">
+      <div class="container mx-auto flex items-center justify-between p-4">
+        <!-- Logo and Company Name -->
+        <div class="flex items-center">
+          <img src="files/logo.png" alt="Logo" class="h-24 mr-3" />
+        </div>
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="hover:text-gray-300">Home</a>
+          <a href="about.html" class="hover:text-gray-300">About Us</a>
+          <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+          <a href="privacy.html" class="hover:text-gray-300">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-gray-300">Terms and Conditions</a>
+        </nav>
+        <!-- Mobile Hamburger Menu Button -->
+        <div class="md:hidden">
+          <button id="menuButton" class="focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Navigation Menu -->
+      <div id="mobileMenu" class="md:hidden hidden bg-[#247cff] text-white">
+        <nav class="flex flex-col space-y-2 p-4">
+          <a href="index.html" class="hover:text-gray-300">Home</a>
+          <a href="about.html" class="hover:text-gray-300">About Us</a>
+          <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+          <a href="privacy.html" class="hover:text-gray-300">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-gray-300">Terms and Conditions</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto p-6 bg-white shadow-md my-6">
+      <h1 class="text-3xl font-bold mb-4 text-[#247cff]">About Us</h1>
+      <div class="text-gray-700 leading-relaxed space-y-6">
+        <p>
+          At The Medical Commerce, our mission is to deliver compassionate and personalized care to seniors in the comfort of their own homes. We believe every elderly individual deserves dignity, respect, and a nurturing environment that supports both physical and emotional well‐being. Founded on the idea of bridging the gap between modern healthcare technology and traditional caregiving, our organization has grown into a trusted provider of in‐home care and telehealth services. Our commitment to excellence drives us to continually innovate and improve our services so that every senior receives the highest quality of care possible. We strive to make a positive impact every day by creating a supportive atmosphere that honors the lives and experiences of our clients.
+        </p>
+        <br>
+        <p>
+          Our team is comprised of experienced caregivers, skilled medical professionals, and dedicated support staff who work collaboratively to design customized care plans that address the unique needs of each client. We offer routine wellness checks, medication management, and specialized support for chronic conditions, seamlessly integrating advanced telehealth solutions with personalized home visits. By continuously updating our training and embracing the latest in medical technology, we ensure that our services remain at the forefront of elderly care. This proactive approach allows us to offer flexible scheduling and tailor our care plans so that they truly resonate with the individual lifestyles and requirements of our clients.
+        </p>
+        <br>
+        <p>
+          Transparency and trust form the foundation of our relationships with both our clients and their families. At The Medical Commerce, we maintain clear communication about our services, pricing, and care strategies, ensuring that every family is well-informed and confident in their decisions. Our collaborative approach involves listening to the unique needs and preferences of each senior, allowing us to craft care solutions that are both effective and empathetic. By fostering open dialogue and mutual respect, we build long-lasting relationships that create a supportive network for everyone involved. This commitment to honest, clear information is at the heart of the exceptional care we deliver.
+        </p>
+        <br>
+        <p>
+          The positive impact of our work is reflected in the heartfelt testimonials we receive from families who have experienced our care firsthand. Clients often share stories of improved well‐being, enhanced independence, and the peace of mind that comes from knowing expert help is always available. Our comprehensive approach addresses not only the physical health of seniors but also their emotional and social needs through regular check-ins, engaging activities, and compassionate companionship. We believe that every interaction is an opportunity to reaffirm our commitment to quality care, and our efforts help create a sense of community and belonging for those we serve.
+        </p>
+        <br>
+        <p>
+          Looking toward the future, The Medical Commerce is dedicated to setting new standards in elderly care by combining modern healthcare innovations with timeless values of empathy and respect. We invite you to explore our range of services and discover how our personalized approach can make a meaningful difference in the lives of your loved ones. Our ongoing commitment to ethical practices, continuous improvement, and innovative care solutions ensures that we remain a trusted partner in your family’s journey. With The Medical Commerce by your side, you can be assured of a supportive, transparent, and high‐quality care experience that enriches the lives of seniors every day.
+        </p>
+        <br>
+      </div>
+    </main>       
+
+    <!-- Footer -->
+    <footer class="bg-[#247cff] text-white">
+      <div class="container mx-auto p-4">
+        <div class="grid md:grid-cols-2 gap-4">
+          <!-- Company Info -->
+          <div>
+            <p class="mb-2">CIN - U01631KA2010PTC096843</p>
+            <p class="mb-2">Address - 2, Western Urban Rd, Davri Nagar, Siddharth Nagar, Santacruz East, Mumbai, Maharashtra 400055, India</p>
+            <p class="mb-2">Phone - 0674 2702416</p>
+          </div>
+          <!-- Copyright -->
+          <div class="text-right">
+            <p>Copyright © 2025 The Medical Commerce. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+      const menuButton = document.getElementById('menuButton');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
