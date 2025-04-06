@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À Propos de Nous - The Medical Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+    <style>
+      html,
+      body {
+          height: 100%;
+      }
+      body {
+          display: flex;
+          flex-direction: column;
+      }
+      main {
+          flex: 1;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-[#247cff] text-white sticky top-0 z-50">
+      <div class="container mx-auto flex items-center justify-between p-4">
+        <div class="flex items-center">
+          <img src="files/logo.png" alt="Logo" class="h-24 mr-3" />
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="hover:text-gray-300">Accueil</a>
+          <a href="about.html" class="hover:text-gray-300">À Propos de Nous</a>
+          <a href="contact.html" class="hover:text-gray-300">Contactez-nous</a>
+          <a href="privacy.html" class="hover:text-gray-300">Politique de Confidentialité</a>
+          <a href="terms.html" class="hover:text-gray-300">Conditions Générales</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="menuButton" class="focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobileMenu" class="md:hidden hidden bg-[#247cff] text-white">
+        <nav class="flex flex-col space-y-2 p-4">
+          <a href="index.html" class="hover:text-gray-300">Accueil</a>
+          <a href="about.html" class="hover:text-gray-300">À Propos de Nous</a>
+          <a href="contact.html" class="hover:text-gray-300">Contactez-nous</a>
+          <a href="privacy.html" class="hover:text-gray-300">Politique de Confidentialité</a>
+          <a href="terms.html" class="hover:text-gray-300">Conditions Générales</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto p-6 bg-white shadow-md my-6">
+      <h1 class="text-3xl font-bold mb-4 text-[#247cff]">À Propos de Nous</h1>
+      <div class="text-gray-700 leading-relaxed space-y-6">
+        <p>
+          Chez The Medical Commerce, notre mission est de fournir des soins compatissants et personnalisés aux personnes âgées dans le confort de leur propre domicile. Nous croyons que chaque personne âgée mérite dignité, respect et un environnement stimulant qui soutient à la fois le bien-être physique et émotionnel. Fondée sur l'idée de combler le fossé entre la technologie moderne des soins de santé et les soins traditionnels, notre organisation est devenue un fournisseur de confiance de services de soins à domicile et de télésanté. Notre engagement envers l'excellence nous pousse à innover et à améliorer continuellement nos services afin que chaque personne âgée reçoive les soins de la plus haute qualité possible. Nous nous efforçons d'avoir un impact positif chaque jour en créant une atmosphère de soutien qui honore la vie et les expériences de nos clients.
+        </p>
+        <br>
+        <p>
+          Notre équipe est composée d'aidants expérimentés, de professionnels de la santé qualifiés et de personnel de soutien dévoué qui travaillent en collaboration pour concevoir des plans de soins personnalisés qui répondent aux besoins uniques de chaque client. Nous proposons des bilans de bien-être réguliers, la gestion des médicaments et un soutien spécialisé pour les affections chroniques, intégrant de manière transparente des solutions de télésanté avancées aux visites à domicile personnalisées. En mettant continuellement à jour notre formation et en adoptant les dernières technologies médicales, nous nous assurons que nos services restent à la pointe des soins aux personnes âgées. Cette approche proactive nous permet d'offrir des horaires flexibles et d'adapter nos plans de soins afin qu'ils correspondent véritablement aux modes de vie et aux exigences individuels de nos clients.
+        </p>
+        <br>
+        <p>
+          La transparence et la confiance constituent le fondement de nos relations avec nos clients et leurs familles. Chez The Medical Commerce, nous maintenons une communication claire concernant nos services, nos prix et nos stratégies de soins, garantissant que chaque famille est bien informée et confiante dans ses décisions. Notre approche collaborative implique d'écouter les besoins et les préférences uniques de chaque personne âgée, ce qui nous permet d'élaborer des solutions de soins à la fois efficaces et empathiques. En favorisant un dialogue ouvert et un respect mutuel, nous établissons des relations durables qui créent un réseau de soutien pour toutes les personnes impliquées. Cet engagement envers une information honnête et claire est au cœur des soins exceptionnels que nous prodiguons.
+        </p>
+        <br>
+        <p>
+          L'impact positif de notre travail se reflète dans les témoignages sincères que nous recevons de familles qui ont expérimenté nos soins de première main. Les clients partagent souvent des histoires d'amélioration du bien-être, d'une plus grande autonomie et de la tranquillité d'esprit qui découle du fait de savoir qu'une aide experte est toujours disponible. Notre approche globale aborde non seulement la santé physique des personnes âgées, mais aussi leurs besoins émotionnels et sociaux grâce à des suivis réguliers, des activités stimulantes et une compagnie compatissante. Nous croyons que chaque interaction est une occasion de réaffirmer notre engagement envers des soins de qualité, et nos efforts contribuent à créer un sentiment de communauté et d'appartenance pour ceux que nous servons.
+        </p>
+        <br>
+        <p>
+          Pour l'avenir, The Medical Commerce s'engage à établir de nouvelles normes en matière de soins aux personnes âgées en combinant les innovations modernes en matière de soins de santé avec des valeurs intemporelles d'empathie et de respect. Nous vous invitons à explorer notre gamme de services et à découvrir comment notre approche personnalisée peut faire une différence significative dans la vie de vos proches. Notre engagement continu envers des pratiques éthiques, une amélioration continue et des solutions de soins innovantes garantit que nous restons un partenaire de confiance dans le parcours de votre famille. Avec The Medical Commerce à vos côtés, vous pouvez être assuré d'une expérience de soins de soutien, transparente et de haute qualité qui enrichit la vie des personnes âgées chaque jour.
+        </p>
+        <br>
+      </div>
+    </main>
+
+    <footer class="bg-[#247cff] text-white">
+      <div class="container mx-auto p-4">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <p class="mb-2" style="margin-top: 20px;">Numéro d'entreprise 00943935 <br>
+              Adresse : Lime St, London EC3M 7HR, Royaume-Uni <br>
+              Numéro de téléphone : 01632 960189 <br>
+            </p>
+          </div>
+          <div class="text-right">
+            <p>Copyright © 2025 The Medical Commerce. Tous droits réservés.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuButton = document.getElementById('menuButton');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
