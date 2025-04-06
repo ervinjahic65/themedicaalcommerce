@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms and Conditions - The Medical Commerce</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+    <style>
+      html,
+      body {
+          height: 100%;
+      }
+      body {
+          display: flex;
+          flex-direction: column;
+      }
+      main {
+          flex: 1;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-[#247cff] text-white sticky top-0 z-50">
+      <div class="container mx-auto flex items-center justify-between p-4">
+        <!-- Logo and Company Name -->
+        <div class="flex items-center">
+          <img src="files/logo.png" alt="Logo" class="h-24 mr-3" />
+        </div>
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="hover:text-gray-300">Home</a>
+          <a href="about.html" class="hover:text-gray-300">About Us</a>
+          <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+          <a href="privacy.html" class="hover:text-gray-300">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-gray-300">Terms and Conditions</a>
+        </nav>
+        <!-- Mobile Hamburger Menu Button -->
+        <div class="md:hidden">
+          <button id="menuButton" class="focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Navigation Menu -->
+      <div id="mobileMenu" class="md:hidden hidden bg-[#247cff] text-white">
+        <nav class="flex flex-col space-y-2 p-4">
+          <a href="index.html" class="hover:text-gray-300">Home</a>
+          <a href="about.html" class="hover:text-gray-300">About Us</a>
+          <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+          <a href="privacy.html" class="hover:text-gray-300">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-gray-300">Terms and Conditions</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container mx-auto p-6 bg-white shadow-md my-6">
+      <h1 class="text-3xl font-bold mb-4 text-[#247cff]">Terms and Conditions</h1>
+      <div class="text-gray-700 leading-relaxed space-y-6">
+        <p>
+          Welcome to The Medical Commerce. These Terms and Conditions govern your use of our website, products, and services. By accessing or using our site, you agree to comply with and be bound by these terms. Please read them carefully. If you do not agree with any part of these Terms and Conditions, you must refrain from using our services. We reserve the right to modify these terms at any time without prior notice.
+        </p>
+        <p>
+          <strong>Acceptance of Terms:</strong> By using our website, you represent that you are at least 18 years of age and capable of entering into legally binding agreements. Your continued use of our services indicates your acceptance of any changes to these terms. It is your responsibility to review the Terms and Conditions periodically for any updates.
+        </p>
+        <p>
+          <strong>Intellectual Property:</strong> All content on this website, including text, graphics, logos, images, and software, is the property of The Medical Commerce or its licensors and is protected by intellectual property laws. You may not reproduce, modify, distribute, or display any part of our content without our explicit written permission. Unauthorized use of our materials may result in legal action.
+        </p>
+        <p>
+          <strong>User Obligations:</strong> As a user, you agree to use our website solely for lawful purposes. You must not attempt to disrupt the functionality or security of the site, nor should you use any automated systems to access or copy content. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account.
+        </p>
+        <p>
+          <strong>Limitation of Liability:</strong> The Medical Commerce shall not be liable for any direct, indirect, incidental, special, or consequential damages arising from your use of our website. While we strive to provide accurate and reliable information, we make no warranties regarding the completeness or accuracy of our content. Your use of our services is at your own risk, and we are not responsible for any losses incurred.
+        </p>
+        <p>
+          <strong>Modifications and Governing Law:</strong> We reserve the right to amend these Terms and Conditions at any time. All changes will be posted on this page, and your continued use of the site signifies your acceptance of such changes. These terms are governed by and construed in accordance with the laws of the applicable jurisdiction, and any disputes arising under these terms shall be resolved in the courts of that jurisdiction.
+        </p>
+        <p>
+          By accessing The Medical Commerce's website, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. We encourage you to contact us if you have any questions or require further clarification regarding any aspect of these terms.
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#247cff] text-white">
+      <div class="container mx-auto p-4">
+        <div class="grid md:grid-cols-2 gap-4">
+          <!-- Company Info -->
+          <div>
+            <p class="mb-2">Company number 00943935</p>
+            <p class="mb-2">Address: Lime St, London EC3M 7HR, UK/p>
+            <p class="mb-2">Phone number: 01632 960189 </p>
+          </div>
+          <!-- Copyright -->
+          <div class="text-right">
+            <p>Copyright © 2025 The Medical Commerce. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+      const menuButton = document.getElementById('menuButton');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
